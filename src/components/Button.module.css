@@ -1,0 +1,24 @@
+button {
+  width: 10rem;
+  height: 2rem;
+}
+
+.primary {
+  color: white;  
+  background-color: rgb(185, 58, 185);
+}
+
+.secondary {
+  color: white;
+  background-color: rgb(185, 225, 185);
+}
+
+.warning {
+  color: white;
+  background-color: rgb(251, 33, 33);
+}
+
+.success {
+  color: white;
+  background-color: rgb(105, 130, 61);
+}
