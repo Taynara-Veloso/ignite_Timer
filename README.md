@@ -151,3 +151,32 @@ Utilizar a função "register" vinda do hook useForm nos inputs
 ```
 watch
 ```
+---
+### Bibliotecas de validação de formulário.
+
+## Yup
+[Documentação](https://www.jsdocs.io/package/yup)
+
+```
+npm i yup
+```
+## Joi
+
+[Documentação](https://joi.dev/)
+```
+npm i joi
+```
+## Zod
+
+[Documentação](https://zod.dev/)
+```
+npm i zod
+```
+---
+### Para integrar essas libs de validação com o React e necessário instalar também outra biblioteca chamada: `hookform/resolvers`
+
+[Documentação](https://react-hook-form.com/)
+
+```
+npm i @hookform/resolvers
+```
