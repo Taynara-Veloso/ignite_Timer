@@ -54,3 +54,45 @@ No styled-components, como podemos utilizar outros componentes estilizados como 
 ```
 styled(baseComponent)
 ```
+
+### forma de trabalho
+
+## Controlled
+  * Controlled mantém guardado em tempo real no estado(a informação que o usuário insere na aplicação). 
+
+  * Toda vez que o `estado` mudar, o React precisa renderizar a pág inteira com o novo valor.
+
+  * Melhor fluidez.
+    * Habilita e desabilita alguma coisa dependendo do `estado`.
+
+  * QUANDO UTILIZAR 
+    * Formulário simples.
+    * Formulário com poucos campos. 
+      * Formulário de login.
+      * Formulário de cadastro.
+
+#### Quando estamos utilizando inputs controlados (controlled) em um formulário?
+```
+Quando mantemos em tempo real as informações dos inputs do usuário guardadas no estado da nossa aplicação
+```
+
+`Exemplo:`
+```js
+const [task, setTask] = useState('')
+
+<form action="">
+  <FormContainer>
+    <label htmlFor="task">Vou trabalhar em</label>
+    <TaskInput
+      id="task"
+      type="task-suggestions"
+      placeholder="Dê um nome para o seu projeto"
+      onChange={(e) => setTask(e.target.value)} //Controlled
+      value={task}
+    />
+    <StartCountdownButton disabled={!task} type="submit" /* caso tenha algo escrito no TaskInput o button volta a funcionar somente no método Controlled */ > 
+      <Play size={24} />
+        Começar
+    </StartCountdownButton>
+  </FormContainer>
+```
