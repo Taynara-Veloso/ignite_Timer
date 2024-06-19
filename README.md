@@ -96,3 +96,36 @@ const [task, setTask] = useState('')
     </StartCountdownButton>
   </FormContainer>
 ```
+
+## Uncontrolled
+  * Uncontrolled (é quase a mesma coisa) porém só buscamos a informação que o usuário insere no 'input' da aplicação QUANDO realmente precisarmos dela. 
+
+  * Não monitora o valor digitado em tempo real.
+
+  * Melhor performance.
+
+  * Não utiliza UseState. Não é fluido.
+
+  * QUANDO UTILIZAR 
+    * Formulário complexos.
+    * Formulário com muitos campos. 
+      * Deshboard.
+
+`Exemplo:`
+```js
+function handleSubmit(event) {
+  event.target.task.value;
+}
+
+  <form onSubmit={handleSubmit} action="" /* Uncontrolled usa função para controlar o input */> 
+    <FormContainer>
+      <label htmlFor="task">Vou trabalhar em</label>
+      <TaskInput
+        id="task"
+        name="task"
+        type="task-suggestions"
+        placeholder="Dê um nome para o seu projeto"
+      />
+    </FormContainer>
+  </form>  
+```
