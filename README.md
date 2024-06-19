@@ -129,3 +129,25 @@ function handleSubmit(event) {
     </FormContainer>
   </form>  
 ```
+
+---
+### React Hook Form (Lib)
+
+Para adicionar funcionalidade ao nosso formulário, vamos utilizar uma das principais bibliotecas de formulários para o react, a `react-hook-form`.
+
+`instalando`
+```
+npm i react-hook-form
+```
+
+`react-hook-form` utiliza os dois conceitos anteriores(Controlled e Uncontrolled) fazendo a nossa aplicação ter performance e fluidez.
+---
+#### Na biblioteca React Hook Form, o que precisamos fazer para começar a manipular/lidar com os inputs através dela?
+```
+Utilizar a função "register" vinda do hook useForm nos inputs
+```
+
+#### Na biblioteca React Hook Form, qual a função que devemos utilizar para observar as alterações vindas de um input?
+```
+watch
+```
