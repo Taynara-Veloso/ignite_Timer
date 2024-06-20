@@ -180,3 +180,50 @@ npm i zod
 ```
 npm i @hookform/resolvers
 ```
+---
+# Hooks:
+  Hooks são funções que começam com o prefixo `use` e tem o intúito de adicionar algum funcionamento à um componente na nossa aplicação.
+### useEffect (side-effect) -> Efeito Colateral
+  Permite o dev ficar monitorando mudanças em uma variável e toda vez que essa variável mudar, independente do motivo, uma função é disparada.
+
+  #### Recebe dois parâmetros:
+  * 1° parâmetro: Qual função será executada?
+  * 2° parâmetro: Quando será executada?
+    * É um Array.
+      * Qual variável eu quero monitorar?
+      * toda vez que a variável `[list]` mudar será executada a função `avisarAPI()`.
+  * Quando não usar?
+    * atualizar estado
+  ```js
+  import { useEffect, useState } from 'react'
+
+  function avisarAPI(){
+    console.log('Lista salva');
+  }
+
+  export function App(){
+    const [list, setList] = useState<string[]>([])
+    const [filter, setFilter] = useState('')
+
+    useEffect(() => {
+      avisarAPI();
+    }, [list])
+
+    useEffect(() => {
+      fetch('https://api.github.com/users/taynara_veloso/repos')
+        .then(response => response.json())
+        .then(data => {
+          setList(data.map((item: any) => item.full_name))
+        })
+    }, []) //quando o array de dependência está vazio o useEffect só é executado uma única vez na nossa aplicação.
+
+    const filteredList = list.filter(item => item.includes(filter))
+
+    function addToList() {
+      setList(state => [...state, 'Novo item'])
+    }
+
+    // adicionar à um input onChange={e => setFilter(e.target.value)} e value={filter}
+    // adicionar o addToList à um botão no onClick 
+  }
+  ```
