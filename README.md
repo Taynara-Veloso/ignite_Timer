@@ -227,3 +227,5 @@ npm i @hookform/resolvers
     // adicionar o addToList à um botão no onClick 
   }
   ```
+### useState 
+  É um hook que conseguimos armazenar variáveis que quando tem seu valor alterado provocam uma nova renderização no componente, assim conseguimos exibir em tempo real uma informação conforme ela for atualizada por um clique do usuário ou por uma função.
