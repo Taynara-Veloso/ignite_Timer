@@ -241,3 +241,5 @@ npm i @hookform/resolvers
   É um hook que conseguimos armazenar variáveis que quando tem seu valor alterado provocam uma nova renderização no componente, assim conseguimos exibir em tempo real uma informação conforme ela for atualizada por um clique do usuário ou por uma função.
 
 ---
+#### Prop Drilling
+  O Prop Drilling é um termo utilizado para quando temos propriedades que estão se repassando em diversas camadas da nossa árvore de componentes.
