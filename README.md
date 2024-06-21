@@ -194,6 +194,16 @@ npm i @hookform/resolvers
       * toda vez que a variável `[list]` mudar será executada a função `avisarAPI()`.
   * Quando não usar?
     * atualizar estado
+
+  ### Sobre o hook useEffect, é correto afirmar que:
+  ```
+    O useEffect, quando possui um array de dependencias, executará na montagem do componente e sempre que uma variável no array de dependências mudar
+  ```
+  ### Quando devemos utilizar o useEffect?
+  ```
+    Quando precisamos lidar com efeitos colaterais externos e sincronizar a nossa aplicação com essas informações
+  ```
+
   ```js
   import { useEffect, useState } from 'react'
 
@@ -229,3 +239,5 @@ npm i @hookform/resolvers
   ```
 ### useState 
   É um hook que conseguimos armazenar variáveis que quando tem seu valor alterado provocam uma nova renderização no componente, assim conseguimos exibir em tempo real uma informação conforme ela for atualizada por um clique do usuário ou por uma função.
+
+---
