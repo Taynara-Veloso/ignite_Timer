@@ -243,3 +243,5 @@ npm i @hookform/resolvers
 ---
 #### Prop Drilling
   O Prop Drilling é um termo utilizado para quando temos propriedades que estão se repassando em diversas camadas da nossa árvore de componentes.
+#### Context API 
+  Permite compartilharmos informações entre VÁRIOS componentes ao mesmo tempo
