@@ -1,5 +1,8 @@
 # React + TypeScript + Vite
 
+![image description](/src/assets/Timer.jpg)
+![image description](/src/assets/historic.jpg)
+
 ## Styled Components
 
 ```
