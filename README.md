@@ -298,3 +298,7 @@ O useEffect, quando possui um array de dependências, executará na montagem do 
 ```
 Precisamos de um Provider no nível mais acima possível por volta dos componentes que dependerão das informações da Context
 ```
+## Immer
+Immer é uma biblioteca que simplifica o manuseio de estruturas de dados imutáveis
+  
+[Documentação](https://immerjs.github.io/immer/)
