@@ -248,3 +248,53 @@ npm i @hookform/resolvers
   O Prop Drilling é um termo utilizado para quando temos propriedades que estão se repassando em diversas camadas da nossa árvore de componentes.
 #### Context API 
   Permite compartilharmos informações entre VÁRIOS componentes ao mesmo tempo
+---
+### Qual é o hook que devemos utilizar quando precisamos lidar com estados mais complexos em nossos contextos?
+```
+useReducer
+```
+### Qual o padrão utilizado nos dispatchs dos reducers?
+```
+{ type, payload }
+```
+### Qual a utilidade de utilizar um enum para criar o nome das Actions do Reducer?
+```
+Facilitar a reutilização dos nomes das actions, definindo todos os possíveis valores dentro de uma variável que pode ser utilizada em todas as partes do código.
+```
+### Qual o benefício de separar as actions em um arquivo diferente dos reducers?
+```
+Permite que a lógica seja reaproveitada e torna mais fácil ter a tipagem do payload que será enviado na action.
+```
+---
+### Qual das seguintes alternativas é uma sintaxe válida de um componente criado com o Styled Components?
+```
+const Container = styled.div``
+```
+### Dentre as seguintes, assinale o código válido que acessa a propriedade green-300 do tema do Styled-components.
+```
+color: ${props => props.theme[’green-300’]};
+```
+### Assim como o <BrowserRouter /> do react-router-dom e o <ThemeProvider /> do styled-components, é correto afirmar que:
+```
+Eles são Context Providers e servem para compartilhar informações entre os componentes que estão dentro deles e não produzem nada em tela.
+```
+### No styled-components, como podemos utilizar outros componentes estilizados como base para novos componentes?
+```
+styled(baseComponent)
+```
+### Quando estamos utilizando inputs controlados (controlled) em um formulário?
+```
+Quando mantemos em tempo real as informações dos inputs do usuário guardadas no estado da nossa aplicação
+```
+### Na biblioteca React Hook Form, o que precisamos fazer para começar a manipular/lidar com os inputs através dela?
+```
+Utilizar a função "register" vinda do hook useForm nos inputs
+```
+### Sobre o hook useEffect, é correto afirmar que:
+```
+O useEffect, quando possui um array de dependências, executará na montagem do componente e sempre que uma variável no array de dependências mudar
+```
+### Com relação a Context API, é correto afirmar que para manipularmos às informações do contexto, nós:
+```
+Precisamos de um Provider no nível mais acima possível por volta dos componentes que dependerão das informações da Context
+```
