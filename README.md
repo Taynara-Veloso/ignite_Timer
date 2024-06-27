@@ -302,3 +302,7 @@ Precisamos de um Provider no nível mais acima possível por volta dos component
 Immer é uma biblioteca que simplifica o manuseio de estruturas de dados imutáveis
   
 [Documentação](https://immerjs.github.io/immer/)
+
+```
+npm i immer
+```
